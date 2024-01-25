@@ -10,7 +10,7 @@ class Weather extends Component {
 
     const { main, weather, name, pressure, rain } = weatherData;
     const { temp, humidity } = main;
-    const weatherCondition = weather[0].main; // Assuming the weather condition is in the first element
+    const weatherCondition = weather[0].main;
 
     // Map weather conditions to corresponding icons
     const weatherIcons = {
@@ -20,7 +20,7 @@ class Weather extends Component {
       Thunderstorm: "⛈️",
       Snow: "❄️",
       Mist: "🌫️",
-      // Add more conditions and icons as needed
+      // Add more conditions
     };
 
     const icon = weatherIcons[weatherCondition] || "🤷‍♂️"; // Default icon for unknown conditions
