@@ -43,7 +43,7 @@ class App extends Component {
       this.setState({ weatherData: response.data });
     } catch (error) {
       console.error("Error fetching weather data:", error);
-      alert("Error fetching weather data. Please try again.");
+      alert("Please Enter a valid name and try again.");
     }
   };
 
